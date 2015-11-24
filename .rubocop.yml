@@ -1,0 +1,17 @@
+AllCops:
+  Exclude:
+    - 'bin/**'
+
+Lint/BlockAlignment:
+  Exclude:
+    - 'spec/bbc_radio_networks_spec.rb'
+
+# Offense count: 8
+# Configuration parameters: AllowURI, URISchemes.
+Metrics/LineLength:
+  Max: 180
+
+# Offense count: 1
+# Configuration parameters: CountComments.
+Metrics/ModuleLength:
+  Max: 500
