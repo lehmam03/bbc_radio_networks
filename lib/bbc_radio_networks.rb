@@ -262,8 +262,8 @@ module BbcRadioNetworks
     ALL_NETWORKS.keys
   end
 
-  # Returns a random network
-  def self.random_network(type = 'all_networks')
+  # Returns a random network name
+  def self.random_network_name(type = 'all_networks')
     if type == 'all_networks'
       network_type = NETWORK_TYPES.keys.sample
       NETWORK_TYPES[network_type].keys.sample
