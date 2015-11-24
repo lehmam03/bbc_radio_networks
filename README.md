@@ -1,8 +1,6 @@
 # BbcRadioNetworks
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bbc_radio_networks`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem was created to aid in the testing of the BBC Radio websites, but it is made available to all who might find uses for it. 
 
 ## Installation
 
@@ -22,7 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### List all networks
+
+### Get information for a random network
+
+### Get a random network key
+
+### Get a random network ID
 
 ## Development
 
@@ -32,7 +36,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/bbc_radio_networks.
+Bug reports and pull requests are welcome on GitHub at https://github.com/lehmam03/bbc_radio_networks.
 
 
 ## License
