@@ -36,17 +36,17 @@ end
 
 describe '#get_network_key(network_name)' do
   it 'returns a network key when given a network name' do
-    expect(BbcRadioNetworks.get_network_key('BBC Radio 4')).to eq("radio4")
-    expect(BbcRadioNetworks.get_network_key('BBC Radio Wales')).to eq("radiowales")
-    expect(BbcRadioNetworks.get_network_key('BBC Radio Stoke')).to eq("radiostoke")
+    expect(BbcRadioNetworks.get_network_key('BBC Radio 4')).to eq('radio4')
+    expect(BbcRadioNetworks.get_network_key('BBC Radio Wales')).to eq('radiowales')
+    expect(BbcRadioNetworks.get_network_key('BBC Radio Stoke')).to eq('radiostoke')
   end
 end
 
 describe '#get_network_id(network_name)' do
   it 'returns a network id when given a network id' do
-    expect(BbcRadioNetworks.get_network_id('BBC Radio 6 Music')).to eq("bbc_6music")
-    expect(BbcRadioNetworks.get_network_id('BBC Radio Stoke')).to eq("bbc_radio_stoke")
-    expect(BbcRadioNetworks.get_network_id('BBC World Service')).to eq("bbc_world_service")
+    expect(BbcRadioNetworks.get_network_id('BBC Radio 6 Music')).to eq('bbc_6music')
+    expect(BbcRadioNetworks.get_network_id('BBC Radio Stoke')).to eq('bbc_radio_stoke')
+    expect(BbcRadioNetworks.get_network_id('BBC World Service')).to eq('bbc_world_service')
   end
 end
 
