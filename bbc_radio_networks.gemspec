@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["m@xmaxmax.net"]
 
   spec.summary       = %q{A gem for working with BBC Radio Networks}
-  spec.description   = %q{A gem for working with BBC Radio Networks, exposing their names, IDs and url keys}
+  spec.description   = %q{A gem for working with BBC Radio Networks, this gem exposes network names, IDs and url keys and is intended as a single, up to date, source of truth.}
   spec.homepage      = "https://github.com/lehmam03/bbc_radio_networks"
   spec.license       = "MIT"
 
