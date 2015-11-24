@@ -7,13 +7,13 @@ describe BbcRadioNetworks do
 end
 
 describe '#list_networks' do
-	it 'returns the full array of BBC radio networks' do
-  	list_networks_output = BbcRadioNetworks.list_networks
+  it 'returns the full array of BBC radio networks' do
+    list_networks_output = BbcRadioNetworks.list_networks
     expect(list_networks_output).to be_an(Array)
-    expect(list_networks_output.first).to eq("BBC Radio 1")
-    expect(list_networks_output.last).to eq("BBC Radio York")
+    expect(list_networks_output.first).to eq('BBC Radio 1')
+    expect(list_networks_output.last).to eq('BBC Radio York')
     expect(list_networks_output.length).to eq(57)
-    expect(list_networks_output.sample).to start_with("BBC")
+    expect(list_networks_output.sample).to start_with('BBC')
   end
 end
 
@@ -22,16 +22,22 @@ describe '#random_network_name' do
     random_name = BbcRadioNetworks.random_network_name
     puts "\nRandom network returned: #{random_name}"
     expect(random_name).to be_a(String)
-    expect(random_name).to start_with("BBC")
+    expect(random_name).to start_with('BBC')
   end
   it 'returns a random network name of the correct type when passed a type argument' do
     random_nations_name = BbcRadioNetworks.random_network_name('nations')
-    valid_nations =['BBC Radio Scotland','BBC Radio Nan Gaidheal','BBC Radio Ulster','BBC Radio Foyle','BBC Radio Wales','BBC Radio Cymru']
+    valid_nations = [
+      'BBC Radio Scotland',
+      'BBC Radio Nan Gaidheal',
+      'BBC Radio Ulster',
+      'BBC Radio Foyle',
+      'BBC Radio Wales',
+      'BBC Radio Cymru'
+    ]
     puts "\nRandom nations network returned: #{random_nations_name}"
     expect(random_nations_name).to be_a(String)
     expect(valid_nations).to include(random_nations_name)
-
-  end  
+  end
 end
 
 describe '#get_network_key(network_name)' do
@@ -49,4 +55,3 @@ describe '#get_network_id(network_name)' do
     expect(BbcRadioNetworks.get_network_id('BBC World Service')).to eq('bbc_world_service')
   end
 end
-

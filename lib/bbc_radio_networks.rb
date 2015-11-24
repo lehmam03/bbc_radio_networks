@@ -1,4 +1,4 @@
-require "bbc_radio_networks/version"
+require 'bbc_radio_networks/version'
 
 # Access to BBC Radio network names and information
 module BbcRadioNetworks
@@ -271,7 +271,4 @@ module BbcRadioNetworks
       NETWORK_TYPES[type].keys.sample
     end
   end
-
-
-
 end
