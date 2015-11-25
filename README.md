@@ -21,12 +21,14 @@ Or install it yourself as:
 ## Usage
 
 ### List all networks
-
-### Get information for a random network
+``` BbcRadioNetworks.list_networks```
+Returns an array of the official names of all the BBC networks.
 
 ### Get a random network key
+``` BbcRadioNetworks.get_id('BBC Radio Kent')```
+Returns the BBC ID of the network supplied
 
-### Get a random network ID
+### Get a random network name
 
 ## Development
 
