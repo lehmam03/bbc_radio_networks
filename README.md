@@ -28,13 +28,13 @@ Returns an array of the official names of all the BBC networks.
 
 ### Look up a network key
 ```ruby
-BbcRadioNetworks.get_key('BBC Radio Kent')
+BbcRadioNetworks.get_network_key('BBC Radio Kent')
 ```
 Returns the BBC ID of the network supplied, in this example "bbc_radio_kent"
 
 ### Look up a network ID
 ```ruby
-BbcRadioNetworks.get_id('BBC Radio Kent')
+BbcRadioNetworks.get_network_id('BBC Radio Kent')
 ```
 Returns the BBC ID of the network supplied, in this example "radiokent"
 
